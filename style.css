@@ -1,0 +1,90 @@
+.container {
+  width: 1640px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+
+}
+
+img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cormorant-garamond-regular {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-size: 23px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #000;
+}
+
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.box__wrapper {
+  width: 250px;
+  height: 250px;
+  /* border: 1px solid #000; */
+  border-radius: 20%;
+  padding: 10px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+    rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  position: relative;
+  margin-top: 100px;
+}
+
+.box {
+  overflow: hidden;
+  height: 190px;
+}
+
+.title {
+  font-size: 40px;
+  text-align: center;
+}
+
+.text { 
+  text-align: center;
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: -65px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  cursor: pointer;
+
+}
+.svg {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: all .4s ease-in-out;
+}
+
+.svg:hover {
+  transform: scale(1.2);
+  transition: all .4s ease-in-out;
+}
