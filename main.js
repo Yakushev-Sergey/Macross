@@ -45,7 +45,7 @@ color3.addEventListener('click', function() {
 color4.addEventListener('click', function() {
   console.log('color')
   title.forEach(v => {
-    v.style.color = "#0725dac7";
+    v.style.color = "#d7260cc7";
   })
 })
 
