@@ -31,7 +31,7 @@ color.addEventListener('click', function() {
 color2.addEventListener('click', function() {
   console.log('color')
   title.forEach(v => {
-    v.style.color = "#dc930fe6";
+    v.style.color = "#ff9800";
   })
 })
 
