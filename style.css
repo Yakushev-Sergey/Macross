@@ -62,7 +62,7 @@ body {
 }
 
 .wrapper-box__mini {
-  margin-top: 100px;
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   gap: 30px;
