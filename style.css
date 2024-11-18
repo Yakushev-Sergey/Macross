@@ -24,9 +24,9 @@ body {
   font-weight: 600;
   font-style: normal;
   color: #000;
-  background: 
-		linear-gradient(rgba(135, 60, 255, 0.4), rgba(135, 60, 255, 0.0) 80%),
-		linear-gradient(-45deg, rgba(120, 155, 255, 0.9) 25%, rgba(255, 160, 65, 0.9) 75%);
+  background:
+    linear-gradient(rgba(135, 60, 255, 0.4), rgba(135, 60, 255, 0.0) 80%),
+    linear-gradient(-45deg, rgba(120, 155, 255, 0.9) 25%, rgba(255, 160, 65, 0.9) 75%);
 }
 
 
@@ -36,12 +36,13 @@ body {
   flex-wrap: wrap;
   gap: 60px;
   z-index: 1;
+  position: relative;
 }
 
 
 
 .box__wrapper {
-  width: 150px;
+  width: 145px;
   height: 200px;
   /* border: 1px solid #000; */
   border-radius: 20%;
@@ -65,7 +66,7 @@ body {
   margin-top: 30px;
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 15px;
 }
 
 .box {
@@ -150,13 +151,123 @@ body {
   width: 50px;
   height: 20px;
 }
+
 .color__third {
   background-color: #14b42ec7;
   width: 50px;
   height: 20px;
 }
+
 .color__fourth {
   background-color: #d7260cc7;
   width: 50px;
   height: 20px;
+}
+
+
+
+.taxi__wrapper {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  width: 130px;
+}
+
+.add__hedding {
+  font-size: 28px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.add__btn {
+  width: 138px;
+  height: 30px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #cfcfcfa6;
+}
+
+.add__text {
+  width: 130px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  padding-left: 5px;
+  margin-bottom: 15px;
+  background-color: #d83174;
+}
+
+.add__taxi {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  margin-bottom: 40px;
+}
+
+
+.taxi {
+  position: absolute;
+  width: 130px;
+  margin-bottom: 40px;
+  top: 70px;
+  left: 70px;
+
+}
+
+.taxi__input {
+  width: 120px;
+  height: 50px;
+  text-wrap: wrap;
+  border-radius: 10px;
+  border: none;
+  padding-left: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #d83174;
+  display: flex;
+  align-items: center;
+}
+
+.copp__wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.copp__tax {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-left: 15px;
+  transition: all .4s ease-in-out;
+}
+
+.copp__tax:hover {
+  transform: scale(1.2);
+  transition: all .4s ease-in-out;
+}
+
+.img__taxi {
+  margin: 0px 0px 24px 40px;
+}
+.img__taxi::after {
+  display: block;
+  border: 1px solid black;
+  width: 130px;
+  content: '';
+  margin-left: -45px;
+}
+
+.tick {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.cross {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
 }
