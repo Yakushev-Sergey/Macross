@@ -1,7 +1,8 @@
 
 const inputAc = document.querySelectorAll('.taxi__input');
 const linkOp = document.querySelectorAll('.copp__tax');
-const taxi = document.querySelector('form')
+const taxi = document.querySelector('form');
+const dell = document.querySelectorAll('.del__tax');
 
 
 
@@ -12,19 +13,27 @@ for (let i = 0; i < inputAc.length; i++) {
   });
 }
 
-function inputActiv() {
+
+for (let i = 0; i < dell.length; i++) {
+  dell[i].addEventListener('click', function () {
+    inputAc[i].value = "";
+    inputAc[i].classList.remove('show')
+  });
+}
+
+
+function colorInput () {
   for (let i = 0; i < inputAc.length; i++) {
-    inputAc[i].addEventListener('input', function () {
-      if (this.value !== '') {
-        this.style.backgroundColor = "#49d831d4";
-      } else if (this.value == '') {
-        this.style.removeProperty("background-color");
+    inputAc[i].addEventListener('input', function() {
+      if (inputAc[i].value !== "") {
+        inputAc[i].classList.add('show')
+      } else {
+        inputAc[i].classList.remove('show')
       }
     })
   }
 }
-inputActiv()
-
+colorInput()
 // const taxi = document.querySelector('form')
 const ls = localStorage;
 let formData = {};
@@ -39,7 +48,7 @@ if (ls.getItem('formData')) {
   for (let key in formData) {
     taxi.elements[key].value = formData[key];
   }
-  inputActiv()
+  // inputActiv()
 }
 
 
@@ -61,7 +70,19 @@ if (ls.getItem('formData')) {
 // const taxiWrapper = document.querySelector('.taxi__wrapper');
 // const ls = localStorage;
 
-
+// удаление цвета с помощью this 
+// function inputActiv() {
+//   for (let i = 0; i < inputAc.length; i++) {
+//     inputAc[i].addEventListener('input', function () {
+//       if (this.value !== '') {
+//         this.style.backgroundColor = "#49d831d4";
+//       } else if (this.value == '') {
+//         this.style.removeProperty("background-color");
+//       }
+//     })
+//   }
+// }
+// inputActiv()
 
 
 // // localStorage.setItem('taxiWrapper', JSON.stringify(taxiWrapper.innerHTML));
