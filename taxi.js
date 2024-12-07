@@ -14,17 +14,16 @@ for (let i = 0; i < inputAc.length; i++) {
 }
 
 
-for (let i = 0; i < dell.length; i++) {
-  dell[i].addEventListener('click', function () {
-    inputAc[i].value = "";
-    inputAc[i].classList.remove('show')
-  });
-}
+  for (let i = 0; i < dell.length; i++) {
+    dell[i].addEventListener('click', function () {
+      inputAc[i].value = "";
+      inputAc[i].classList.remove('show');
+    });
+  }
 
-
-function colorInput () {
+function colorInput() {
   for (let i = 0; i < inputAc.length; i++) {
-    inputAc[i].addEventListener('input', function() {
+    inputAc[i].addEventListener('input', function () {
       if (inputAc[i].value !== "") {
         inputAc[i].classList.add('show')
       } else {
@@ -34,11 +33,12 @@ function colorInput () {
   }
 }
 colorInput()
-// const taxi = document.querySelector('form')
+
+
 const ls = localStorage;
 let formData = {};
 
-taxi.addEventListener('input', function(event) {
+taxi.addEventListener('input', function (event) {
   formData[event.target.name] = event.target.value;
   ls.setItem('formData', JSON.stringify(formData))
 })
@@ -48,9 +48,7 @@ if (ls.getItem('formData')) {
   for (let key in formData) {
     taxi.elements[key].value = formData[key];
   }
-  // inputActiv()
 }
-
 
 
 
@@ -70,7 +68,7 @@ if (ls.getItem('formData')) {
 // const taxiWrapper = document.querySelector('.taxi__wrapper');
 // const ls = localStorage;
 
-// удаление цвета с помощью this 
+// удаление цвета с помощью this
 // function inputActiv() {
 //   for (let i = 0; i < inputAc.length; i++) {
 //     inputAc[i].addEventListener('input', function () {
