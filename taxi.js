@@ -14,12 +14,13 @@ for (let i = 0; i < inputAc.length; i++) {
 }
 
 
-  for (let i = 0; i < dell.length; i++) {
-    dell[i].addEventListener('click', function () {
-      inputAc[i].value = "";
-      inputAc[i].classList.remove('show');
-    });
-  }
+  // for (let i = 0; i < dell.length; i++) {
+  //   dell[i].addEventListener('click', function () {
+  //     inputAc[i].value = "";
+  //     inputAc[i].classList.remove('show');
+  //   });
+  // }
+
 
 function colorInput() {
   for (let i = 0; i < inputAc.length; i++) {
@@ -39,9 +40,9 @@ const ls = localStorage;
 let formData = {};
 
 taxi.addEventListener('input', function (event) {
-  formData[event.target.name] = event.target.value;
-  ls.setItem('formData', JSON.stringify(formData))
-})
+    formData[event.target.name] = event.target.value;
+    ls.setItem('formData', JSON.stringify(formData));
+});
 
 if (ls.getItem('formData')) {
   formData = JSON.parse(ls.getItem('formData'));
