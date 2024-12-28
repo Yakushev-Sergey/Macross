@@ -292,6 +292,9 @@ body {
 .show {
   background-color: green;
 }
+.showTimeOut {
+  background-color: #8031d873;
+}
 
 #Christmas_Lights {
   text-align: center;
@@ -431,3 +434,6 @@ body {
   -webkit-animation-delay: 1.2s;
   animation-delay: 1.2s;
   }
+
+
+  

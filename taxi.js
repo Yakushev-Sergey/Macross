@@ -10,9 +10,18 @@ for (let i = 0; i < inputAc.length; i++) {
   linkOp[i].addEventListener('click', function () {
     const qq = inputAc[i].value;
     navigator.clipboard.writeText(qq);
+
+    //добавляем класс после того как скопировали текст
+    if (navigator.clipboard.writeText(qq)) {
+      inputAc[i].classList.add('showTimeOut')
+      setTimeout(() => {
+        inputAc[i].classList.remove('showTimeOut')
+      }, 60000)
+    }  if (inputAc[i].value == "") {
+      inputAc[i].classList.remove('showTimeOut')
+    }
   });
 }
-
 
   // for (let i = 0; i < dell.length; i++) {
   //   dell[i].addEventListener('click', function () {
@@ -50,12 +59,6 @@ if (ls.getItem('formData')) {
     taxi.elements[key].value = formData[key];
   }
 }
-
-
-
-
-
-
 
 
 
