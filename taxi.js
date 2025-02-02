@@ -16,10 +16,8 @@ for (let i = 0; i < inputAc.length; i++) {
       inputAc[i].classList.add('showTimeOut')
       setTimeout(() => {
         inputAc[i].classList.remove('showTimeOut')
-      }, 60000)
-    }  if (inputAc[i].value == "") {
-      inputAc[i].classList.remove('showTimeOut')
-    }
+      }, 40000)
+    } 
   });
 }
 
