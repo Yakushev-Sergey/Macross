@@ -74,10 +74,17 @@ body {
   height: 130px;
   display: flex;
   align-items: center;
+  width: 155px;
 }
 
 .box__mini {
-  height: 75px;
+  overflow-y: auto;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.box__mini::-webkit-scrollbar {
+  width: 0px;
 }
 
 .boxlittle {
@@ -102,6 +109,7 @@ body {
   font-size: 25px;
   text-align: center;
   color: #0725dac7;
+  margin-bottom: 10px;
 }
 
 .text {
@@ -227,11 +235,11 @@ body {
   padding-left: 5px;
   font-size: 16px;
   font-weight: 700;
-  background-color: #d83174;
+  background-color: #251f93;
   display: flex;
   align-items: center;
 }
-
+/* d83174 */
 .copp__wrapper {
   display: flex;
   align-items: center;
