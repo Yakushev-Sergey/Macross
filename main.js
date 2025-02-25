@@ -3,8 +3,6 @@ const text = document.querySelectorAll('[data-tab]');
 const button = document.querySelectorAll('[data-item-id]');
 
 
-
-
 for (let i = 0; i < text.length; i++) {
   button[i].addEventListener('click', function() {
     const textValue = text[i].innerText;
@@ -13,12 +11,24 @@ for (let i = 0; i < text.length; i++) {
 }
 
 
+const menuBtn = document.querySelector('.menu')
+const closeBtn = document.querySelector('.close')
+const menu = document.querySelector('.menu-wrapper')
+
+
+menuBtn.addEventListener('click', () => {
+  menu.classList.toggle('open') 
+})
+
+closeBtn.addEventListener('click', () => {
+  menu.classList.remove('open')
+})
+
+
 const color = document.querySelector(".color__one");
 const color2 = document.querySelector(".color__second");
 const color3 = document.querySelector(".color__third");
 const color4 = document.querySelector(".color__fourth");
-
-
 
 const title = document.querySelectorAll(".title");
 
