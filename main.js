@@ -10,6 +10,21 @@ for (let i = 0; i < text.length; i++) {
   });
 }
 
+const svg = document.querySelectorAll('.svg');
+
+for (let i = 0; i < svg.length; i++) {
+  svg[i].addEventListener('click', function() {
+    
+    if (svg[i].classList.add('svg-show')) {
+      svg[i].classList.add('svg-show')
+    } else {
+      setTimeout(() => {
+        svg[i].classList.remove('svg-show')
+      }, 1000)
+    }
+
+  })
+}
 
 const menuBtn = document.querySelector('.menu')
 const closeBtn = document.querySelector('.close')

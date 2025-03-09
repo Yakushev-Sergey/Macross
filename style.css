@@ -152,6 +152,14 @@ body {
   cursor: pointer;
   transition: all .4s ease-in-out;
 }
+.svg-show {
+  /* background-image: url(./images/tick.svg); */
+  background-color: #970707;
+  object-fit: cover;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
 
 .svg:hover {
   transform: scale(1.2);
