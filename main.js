@@ -20,7 +20,7 @@ for (let i = 0; i < svg.length; i++) {
     } else {
       setTimeout(() => {
         svg[i].classList.remove('svg-show')
-      }, 1000)
+      }, 500)
     }
 
   })

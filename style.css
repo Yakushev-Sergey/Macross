@@ -24,8 +24,13 @@ body {
   font-weight: 600;
   font-style: normal;
   color: #000;
+  background: -webkit-linear-gradient(90deg, #306996, #9369a2, #d36e7d);
+ 
+  background: linear-gradient(90deg, #306996, #9369a2, #d36e7d);
+
+/* 
   background: -webkit-linear-gradient(90deg, #072727, #195e6c, #eb2d4a, #f1681e, #c27d58);
-  background: linear-gradient(90deg, #072727, #195e6c, #eb2d4a, #f1681e, #c27d58);
+  background: linear-gradient(90deg, #072727, #195e6c, #eb2d4a, #f1681e, #c27d58); */
 }
 
 .wrapper {
@@ -147,24 +152,25 @@ body {
 
 .svg {
   object-fit: cover;
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
   transition: all .4s ease-in-out;
 }
+
 .svg-show {
-  /* background-image: url(./images/tick.svg); */
-  background-color: #970707;
+
+  box-shadow: 0px 0px 5px 2px #ffffff;
   object-fit: cover;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+
 }
 
-.svg:hover {
+/* .svg:hover {
   transform: scale(1.2);
   transition: all .4s ease-in-out;
-}
+} */
 
 
 .color {
@@ -295,10 +301,10 @@ body {
   left: -40px;
 }
 
-.del__tax:hover {
+/* .del__tax:hover {
   transform: scale(1.2);
   transition: all .4s ease-in-out;
-}
+} */
 
 .img__taxi {
   margin: 0px 0px 24px 40px;
